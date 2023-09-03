@@ -67,6 +67,8 @@
     border-radius: 0.5rem;
     
     cursor: pointer;
+
+    transition: .4s ease-in-out;
 }
 
 .button-form:hover {
