@@ -1,0 +1,30 @@
+.list_books {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    list-style: none;
+    padding: 1rem;
+    /*background: beige;*/
+
+    top: 0;
+    position: absolute;
+    width: 100%;
+
+    z-index: 10;
+}
+
+.item-List {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.bannerPrincipal {
+    max-width: 100vw;
+}
+
+.bannerPrincipal img {
+    width: 100%;
+    max-height: 100vh;
+}
