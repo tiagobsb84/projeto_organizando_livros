@@ -52,11 +52,6 @@
     border: 1px solid bisque;
 }
 
-.field-form-select {
-    margin-bottom: 1rem;
-    cursor: pointer;
-}
-
 .button-form {
     width: 10rem;
     margin: 1rem 0;

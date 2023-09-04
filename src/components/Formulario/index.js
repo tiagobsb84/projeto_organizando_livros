@@ -1,30 +1,32 @@
+import Fields from "./Fields";
 import "./Formulario.css";
+import ListaCategoria from "./ListaCategoria";
 
 const Formulario = () => {
+
+    const categorias = [
+        'Literatura Brasileira',
+        'Literatura Estrangeira',
+        'Religiosos',
+        'Contos',
+        'Livros didáticos',
+        'Livros infantis',
+        'Gibis'
+    ];
+
+    const salvarCard = (event) => {
+        event.preventDefault();
+        console.log('chamado')
+    }
+
     return(
         <section className="section-form">
             <h1 className="title-form">Preencha os dados do livro para criar seu card.</h1>
-            <form className="form">
-                <div className="box-field">
-                    <label className="label-form">Nome do livro</label>
-                    <input className="field-livro field-form" /> 
-                </div>
-                <div className="box-field">
-                    <label className="label-form">Nome do autor</label>
-                    <input className="field-autor field-form" />
-                </div>
-                <div className="box-field">
-                    <label className="label-form">Imagem do livro</label>
-                    <input className="field-image field-form" />
-                </div>
-                <div>
-                    <label htmlFor="book" className="box-field">Escolha categoria</label>
-                    <select className="field-form field-form-select" id="book" name="book">
-                        <option>Literatura Estrangeira</option>
-                        <option>Estudos</option>
-                        <option>Literatura Brasileira</option>
-                    </select>
-                </div>
+            <form className="form" onSubmit={salvarCard}>
+                <Fields label="Nome do livro" placeholder={"Digite o nome do livro"} />
+                <Fields label="Nome do autor" placeholder={"Digite o nome do autor"} />
+                <Fields label="Imagem do livro" placeholder={"Adicione a URL da imagem"} />
+                <ListaCategoria label="Escolha categoria" itens={categorias} />
                 <div>
                     <button className="button-form">Criar Card</button>
                 </div>
