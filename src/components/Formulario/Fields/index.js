@@ -9,7 +9,7 @@ const Fields = (props) => {
     return (
         <div className="box-field">
             <label className="label-form">{props.label}</label>
-            <input value={props.valor} onChange={mudancaCampo} className="field-livro field-form" placeholder={props.placeholder} />
+            <input required={props.obrigatorio} value={props.valor} onChange={mudancaCampo} className="field-livro field-form" placeholder={props.placeholder} />
         </div>
     )
 }
