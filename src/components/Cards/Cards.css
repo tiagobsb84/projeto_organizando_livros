@@ -1,11 +1,14 @@
 .section-cards {
-    background: #0a04041c;
+    text-align: center;
+    padding: 2rem;
+    background-color: #0a04041c;
 }
 
-.title-category {
-    padding: 2rem 0;
-    text-align: center;
-    color: darkgray;
+.section-cards .title-category {
+    display: inline-block;
+    border-bottom: 2px solid red;
+    font-size: 1.4rem;
+    padding-bottom: 0.3rem;
 }
 
 .box-cards {

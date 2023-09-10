@@ -3,7 +3,7 @@ import Fields from "./Fields";
 import "./Formulario.css";
 import ListaCategoria from "./ListaCategoria";
 
-const Formulario = () => {
+const Formulario = (props) => {
 
     const [nome, setNome] = useState('');
     const [autor, setAutor] = useState('');
@@ -11,8 +11,8 @@ const Formulario = () => {
     const [categoria, setCategoria] = useState('');
 
     const categorias = [
-        'Literatura Brasileira',
         'Literatura Estrangeira',
+        'Literatura Brasileira',
         'Religiosos',
         'Contos',
         'Livros didáticos',
@@ -22,9 +22,12 @@ const Formulario = () => {
 
     const salvarCard = (event) => {
         event.preventDefault();
-
-        console.log('Dados do livro: ' + nome + autor + imagem + categoria);
-        
+        props.livroCadastrado({
+            nome,
+            autor,
+            imagem,
+            categoria
+        })
     }
 
     return(
