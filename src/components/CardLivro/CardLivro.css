@@ -1,0 +1,38 @@
+.box-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    margin-top: 1rem;
+}
+
+.box-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid darkgray;
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+    background-color: darkgray;
+}
+
+.box-image {
+    width: 4.7rem;
+}
+
+.image-card {
+    width: 100%;
+}
+
+.title-book {
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+.author {
+    font-size: .8rem;
+    font-weight: 400;
+}
