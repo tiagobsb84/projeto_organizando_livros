@@ -10,3 +10,10 @@
     font-size: 1.4rem;
     padding-bottom: 0.3rem;
 }
+
+.section-cards .card-livro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
