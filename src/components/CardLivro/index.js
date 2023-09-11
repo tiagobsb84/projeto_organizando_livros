@@ -1,6 +1,6 @@
 import "./CardLivro.css";
 
-const CardLivro = ({nome, autor, imagem, corPrimary, corSecondary}) => {
+const CardLivro = ({nome, autor, imagem, categoria, corPrimary, corSecondary}) => {
     return(
         <div className="box-cards">
             <div className="box-card" style={{ backgroundColor: corSecondary }}>
@@ -9,6 +9,7 @@ const CardLivro = ({nome, autor, imagem, corPrimary, corSecondary}) => {
                 </div>
                 <h4 className="title-book" style={{ color: corPrimary }}>{nome}</h4>
                 <p className="author" style={{ color: corPrimary }}>{autor}</p>
+                <p className="author" style={{ color: corPrimary }}>{categoria}</p>
             </div>
         </div>
     )

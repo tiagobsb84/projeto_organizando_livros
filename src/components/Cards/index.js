@@ -11,6 +11,7 @@ const Cards = (props) => {
                     nome={livro.nome} 
                     autor={livro.autor} 
                     imagem={livro.imagem} 
+                    categoria={livro.categoria}
                 />)}
             </div>
             
