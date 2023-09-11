@@ -1,14 +1,14 @@
 import "./CardLivro.css";
 
-const CardLivro = (props) => {
+const CardLivro = ({nome, autor, imagem, corPrimary, corSecondary}) => {
     return(
         <div className="box-cards">
-            <div className="box-card" style={{ backgroundColor: props.corSecondary }}>
+            <div className="box-card" style={{ backgroundColor: corSecondary }}>
                 <div className="box-image">
-                    <img className="image-card" src="https://github.com/tiagobsb84.png" alt="livro" />
+                    <img className="image-card" src={imagem} alt={nome} />
                 </div>
-                <h4 className="title-book" style={{ color: props.corPrimary }}>O livro</h4>
-                <p className="author" style={{ color: props.corPrimary }}>Fulano Sousa</p>
+                <h4 className="title-book" style={{ color: corPrimary }}>{nome}</h4>
+                <p className="author" style={{ color: corPrimary }}>{autor}</p>
             </div>
         </div>
     )

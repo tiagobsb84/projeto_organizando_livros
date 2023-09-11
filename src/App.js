@@ -56,9 +56,15 @@ function App() {
     <div className="App">
       <>
         <Banner />
-        <Formulario livroCadastrado={livro => novoLivroCadastrado(livro)} />
+        <Formulario cards={cards.map(card => card.nome)} livroCadastrado={livro => novoLivroCadastrado(livro)} />
         <h2 className="title-cards">Organizando meus livros:</h2>
-        {cards.map(card => <Cards key={card.nome} nome={card.nome} corPrimary={card.corPrimary} corSecondary={card.corSecondary} />)}
+        {cards.map(card => <Cards 
+          key={card.nome} 
+          nome={card.nome} 
+          corPrimary={card.corPrimary} 
+          corSecondary={card.corSecondary} 
+          livros={livros}
+        />)}
         <Rodape />
       </>
 

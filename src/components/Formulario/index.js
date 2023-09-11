@@ -10,16 +10,6 @@ const Formulario = (props) => {
     const [imagem, setImagem] = useState('');
     const [categoria, setCategoria] = useState('');
 
-    const categorias = [
-        'Literatura Estrangeira',
-        'Literatura Brasileira',
-        'Religiosos',
-        'Contos',
-        'Livros didáticos',
-        'Livros infantis',
-        'Gibis'
-    ];
-
     const salvarCard = (event) => {
         event.preventDefault();
         props.livroCadastrado({
@@ -57,7 +47,7 @@ const Formulario = (props) => {
                 />
                 <ListaCategoria 
                     label="Escolha categoria" 
-                    itens={categorias} 
+                    itens={props.cards} 
                     valor={categoria}
                     alterandoValor={valor => setCategoria(valor)}
                 />
