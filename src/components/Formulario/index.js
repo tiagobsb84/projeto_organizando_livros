@@ -18,6 +18,11 @@ const Formulario = (props) => {
             imagem,
             categoria
         })
+
+        setNome('');
+        setAutor('');
+        setImagem('');
+        setCategoria('');
     }
 
     return(
@@ -46,6 +51,7 @@ const Formulario = (props) => {
                     alterandoValor={valor => setImagem(valor)}    
                 />
                 <ListaCategoria 
+                    obrigatorio={true}
                     label="Escolha categoria" 
                     itens={props.cards} 
                     valor={categoria}

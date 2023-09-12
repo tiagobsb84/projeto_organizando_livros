@@ -56,7 +56,6 @@ function App() {
 
   function novoLivroCadastrado(livro) {
     setLivros([...livros, livro]);
-    console.table(livro)
   }
 
   return (
