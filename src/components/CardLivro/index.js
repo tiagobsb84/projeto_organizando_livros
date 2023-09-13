@@ -1,18 +1,20 @@
 import "./CardLivro.css";
 
-const CardLivro = ({nome, autor, imagem, categoria, corPrimary, corSecondary}) => {
+const CardLivro = (props) => {
     return(
         <div className="box-cards">
-            <div className="box-card" style={{ backgroundColor: corSecondary }}>
+            <div className="box-card" style={{ backgroundColor: props.corSecondary }}>
                 <div className="box-image">
-                    <img className="image-card" src={imagem} alt={nome} />
+                    <img className="image-card" src={props.imagem} alt={props.nome} />
                 </div>
-                <h4 className="title-book" style={{ color: corPrimary }}>{nome}</h4>
-                <p className="author" style={{ color: corPrimary }}>{autor}</p>
-                <p className="author" style={{ color: corPrimary }}>{categoria}</p>
+                <h4 className="title-book" style={{ color: props.corPrimary }}>{props.nome}</h4>
+                <p className="author" style={{ color: props.corPrimary }}>{props.autor}</p>
+                <p className="author" style={{ color: props.corPrimary }}>{props.categoria}</p>
             </div>
         </div>
     )
 }
 
 export default CardLivro;
+
+//{nome, autor, imagem, categoria, corPrimary, corSecondary}

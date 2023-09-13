@@ -7,12 +7,14 @@ const Cards = (props) => {
         props.livros.length > 0 ? <section className="section-cards" style={{ backgroundColor: props.corPrimary}}>
             <h3 className="title-category" style={{ borderColor: props.corSecondary}}>{props.nome}</h3>
             <div className="card-livro">
-                 {props.livros.map(livro => <CardLivro 
+                 {props.livros.map(livro => <CardLivro
                     key={livro.nome} 
                     nome={livro.nome} 
                     autor={livro.autor} 
                     imagem={livro.imagem} 
                     categoria={livro.categoria}
+                    corPrimary={props.corPrimary}
+                    corSecondary={props.corSecondary}
                 />)}
             </div>
         </section> : ''
