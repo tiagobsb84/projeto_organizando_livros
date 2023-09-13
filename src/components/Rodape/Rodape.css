@@ -11,8 +11,6 @@
 }
 
 .box-network {
-    width: 2rem;
-
     display: flex;
     gap: 1rem;
     justify-content: center;
@@ -20,6 +18,16 @@
     margin: 1rem 0;
 }
 
-.box-network img {
+.link-network {
+    width: 2rem;
+}
+
+.image-network {
     width: 100%;
+
+    transition: .5s;
+}
+
+.image-network:hover {
+    opacity: .6;
 }
