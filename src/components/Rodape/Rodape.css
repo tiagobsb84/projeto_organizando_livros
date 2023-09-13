@@ -31,3 +31,8 @@
 .image-network:hover {
     opacity: .6;
 }
+
+.data-rodape {
+    opacity: .4;
+    margin-top: 15px;
+}

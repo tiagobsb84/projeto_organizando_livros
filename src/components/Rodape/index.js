@@ -11,7 +11,8 @@ const Rodape = () => {
                 <a className="link-network" href="https://github.com/tiagobsb84" target="_blank" rel="noreferrer"><img className="image-network" src={github} alt="icone github" /></a>
             </div>
             <div>
-               <p>Desenvolvido por Tiago Silva</p><p>&copy;{new Date().getFullYear()}</p> 
+               <p>Desenvolvido por Tiago Silva</p>
+               <p className="data-rodape">&copy;{new Date().getFullYear()}</p> 
             </div>
         </section>
     )
